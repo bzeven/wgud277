@@ -1,0 +1,111 @@
+:root {
+    --color-background-no-picture: #012B86;
+    --background-primary: #212FB4 ;
+    --background-secondary: #0D65B7 ;
+    --background-tertiary: #ffffff ;
+    --text-primary: #C7B81F ;
+    --text-secondary: #ffffff ;
+    --text-tertiary: #000000 ;
+    --shadow-primary: rgba(34, 33, 41, 0.253);
+    --portland: "images\Portland.jpg";
+
+}
+html {
+    background-color: var(--color-background-no-picture);
+    color: var(--background-tertiary);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#page-layout{
+    display: flex;
+    z-index: 0;
+}
+#header-main {
+ z-index: 1;
+ position: fixed;
+}
+#header-main, h1 {
+    color: var(--text-primary);
+    text-shadow: 2px 2px var(--text-tertiary);
+    font-weight:600;
+    font-size: 100px;
+    padding-left: 10px;
+    z-index: 0;
+}
+.flag-img {
+    float: right;
+    border: solid 2px;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+}
+.flag-img, img {
+    overflow: hidden;
+    text-align: center;
+}
+#bg-dec01 {
+    padding-left: 2rem;
+    margin-bottom: -15%;
+    width: 960px;
+    
+    background-color: var(--background-primary);
+    filter: drop-shadow(4px 6px 0px var(--shadow-primary));
+}
+#bg-dec02 {
+    position: fixed;
+    margin-left: 5%;
+    background-color: var(--background-secondary);
+    filter: drop-shadow( 40px 40px 0px var(--background-tertiary));
+    width: 1600px;
+    height: 650px;
+    z-index: -2;
+}
+#content{
+    z-index: 0;
+}
+#card-container {
+    display: inline-block;
+
+    
+}
+.outer-card {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 100px 0px;    
+}
+ 
+.inner-card {
+    border: solid white 5px;
+    border-radius: 25px;
+    width: 450px;
+    height:250px;
+    filter: drop-shadow( 12px 12px 10px var(--shadow-primary));
+    overflow: hidden;  
+    transition: scale 1s ease, filter 0.8s ease;    
+}
+.inner-card:hover {
+    filter: drop-shadow(2px 2px 80px rgba(255, 255, 255, 0.5));
+    scale: 1.1;
+}
+
+.label{
+    position: relative;
+    left: 35%;
+    top: -60px;
+    background-color: var(--background-primary);
+    border: solid black 5px;
+    border-radius: 25px;
+    width: 120px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-weight: bolder;
+    font-size: 30px;
+}       
+h2 {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:  60px;
+    text-shadow: 3px 2px var(--text-tertiary);
+    text-align: center;
+    top: 11rem;
+    visibility: hidden;
+}

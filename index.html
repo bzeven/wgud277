@@ -5,60 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To Oregon</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="m.css">
 </head>
-<body>
-    <header id="header-main"> 
-        <div>
-            <nav id="nav-section">                        
-                <a class="nav-button" href="bend.html">Bend</a>
-                <a class="nav-button" href="Portland.html">Portland</a>
-                <a class="nav-button" href="medford.html">Medford</a>
-                <div class="flag-img">
-                    <a href="about.html"><img src="https://cdn.britannica.com/50/245050-050-FC3CEDA6/Oregon-state-flag-reverse-side.jpg" alt="Oregon State Flag" width="300px"></a>
-                </div>
-            </nav>  
-            <h1 id="oregon-title">Welcome to Oregon</h1>
-        </div>                
-       
-    </header>
-    <article>
-            <div id="part1">
-                <h2></h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi
-                    tincidunt ornare massa eget egestas purus. Etiam sit amet nisl purus in.
-                    Id venenatis a condimentum vitae sapien pellentesque habitant morbi. 
-                    Mattis nunc sed blandit libero volutpat sed cras.
-                </p>
-                <p> 
-                    Varius quam quisque id diam vel quam elementum. Urna et pharetra pharetra 
-                    massa massa ultricies mi. Sapien et ligula ullamcorper malesuada proin
-                    libero nunc consequat. Purus viverra accumsan in nisl nisi. 
-                     Tristique senectus et netus et malesuada fames. Convallis convallis tellus id interdum 
-                     velit laoreet. Sit amet risus nullam eget felis eget nunc lobortis. 
-                    Malesuada nunc vel risus commodo viverra. Nunc lobortis mattis aliquam faucibus purus in massa
-                    tempor nec.  Dolor morbi non arcu risus quis varius quam quisque id. Vulputate eu scelerisque 
-                    felis imperdiet proin fermentum. Sed arcu non odio euismod. Nunc sed blandit libero volutpat 
-                    sed cras ornare arcu. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. 
-                    Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Imperdiet sed euismod nisi 
-                    porta. Eget nulla facilisi etiam dignissim diam.
-                </p>
-            </div>
-    </article>
-    <div id="subsection">
-        <aside>
-            <p>
-                Adipiscing at in tellus integer feugiat.
-            </p>
-        </aside>
+<body id ="page-layout">
+    <div id="header-main">
+        <header>
+            <div id="bg-dec01"><h1>Visit Oregon</h1></div>
+        </header>
+        <div id="bg-dec02"></div>
+        <div class="flag-img">
+            <a href="about.html"><img src="images\Flag_of_Oregon.svg" alt="Oregon State Flag" width="300;"> </a>
+        </div>
+    </div>
+    <div id="content">
         <section>
-            <p>
-                Arcu dictum varius duis at consectetur lorem. Magna sit amet purus 
-                gravida. Etiam non quam lacus suspendisse faucibus.
-            </p>
+            <div id="card-container">
+
+                <div class="outer-card">
+                    <h2>Salem</h2>
+                    <div class="inner-card">
+                        <a href="salem.html"><img class="button-image" src="images/Salem.jpg" alt="Salem Aerial View" width="600px"></a>
+                    </div>
+                    <p class="label">Visit</p>
+                </div>
+
+                <div class="outer-card">
+                    <h2>Portland</h2>
+                    <div class="inner-card">
+                        <a href="portland.html"><img class="button-image" src="images/Portland.jpg" alt="Portland Skyline" width="800px"></a>
+                    </div>
+                    <p class="label">Visit</p>
+                </div>
+
+                <div class="outer-card">
+                    <h2>Medford</h2>
+                    <div class="inner-card">
+                        <a href="medford.html"><img class="button-image"  src="images/Medford.jpg" alt="Medford Aerial View" width="600px"></a>
+                    </div>
+                    <p class="label">Visit</p>
+                </div>
+
+            </div>
         </section>
     </div>
+    
+    
 </body>
-</html
+</html>
