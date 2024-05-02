@@ -6,29 +6,60 @@
     --text-primary: #C7B81F ;
     --text-secondary: #ffffff ;
     --text-tertiary: #000000 ;
-}
-html {
+} 
+html{
     background-color: var(--color-background-no-picture);
-    color: var(--background-tertiary);
+    background-image: url(images\Salem.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--text-tertiary);
 }
-#page-layout{
+nav {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+#buttons-group > a {
+    padding: 10px 25px;
+    border: solid 2px var(--background-tertiary);
+    border-radius: 25px;
+    background-color: var(--background-secondary);
+    color: var(--text-secondary);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+/* #page-layout{
     display: grid;
     grid-template-columns: 4fr 2fr 2fr;
     grid-template-rows: 100px 200px 200px;
     gap: 20px;
-}
+} */
 #header-main {
-    grid-column: span 3;
+    border: solid black 1px;
+    background-color: var(--background-primary);
+    filter: drop-shadow(4px 6px 0px var(--shadow-primary));
+   
 }
-.container {
-    border: solid white 2px;
+#header-main, h1{
+    color: var(--text-primary);
+    text-shadow: 2px 2px var(--text-tertiary);
+    font-weight:600;
+    font-size: 100px;
+    padding-left: 10px;
 }
 #content {
-    grid-row: span 10;
-    grid-column: span 1;
+    background-color: var(--background-secondary);
+    filter: drop-shadow(4px 6px 0px var(--shadow-primary));
+    width: 1600px;
+    height: 900px;
+.container {
+    border: solid black 2px;
+    background-color: var(--background-tertiary);
+}
+
 }
 #side1 {
-    grid-column: span 2;
+    display: inline-flex;
 }
 #side2 {
     grid-row: span 9;
