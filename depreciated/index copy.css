@@ -24,13 +24,13 @@ html {
 }
 #header-main {
  z-index: 1;
-
+ position: absolute;
 }
 #header-main, h1 {
     color: var(--text-primary);
     text-shadow: 2px 2px var(--text-tertiary);
     font-weight:600;
-    font-size: 5rem;
+    font-size: 100px;
     padding-left: 10px;
     z-index: 0;
 }
@@ -48,7 +48,7 @@ html {
 #bg-dec01 {
     padding-left: 2rem;
     margin-bottom: -15%;
-    text-wrap: nowrap;
+    width: 960px;
     background-color: var(--background-primary);
     filter: drop-shadow(4px 6px 0px var(--shadow-primary));
 }

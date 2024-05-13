@@ -1,23 +1,21 @@
 :root {
-    --color-background-no-picture: #012B86;
-    --background-primary: #212FB4 ;
-    --background-secondary: #0D65B7 ;
-    --background-tertiary: #ffffff ;
+    --color-background-no-picture: #012b86;
+    --background-primary: #2130b4b7 ;
+    --background-secondary: #0d65b7a9 ;
+    --background-tertiary: #ffffffcb ;
     --text-primary: #C7B81F ;
     --text-secondary: #ffffff ;
     --text-tertiary: #000000 ;
 } 
 html{
-    background-color: var(--color-background-no-picture);
-    background-image: url(images\Salem.jpg);
-    background-position: center;
-    background-size: cover;
     color: var(--text-tertiary);
+    z-index: -10;
 }
 nav {
     display:flex;
     justify-content: flex-end;
-    margin-top: 2em;
+    margin-top: 2rem;
+    margin-right: 100px; 
 }
 #buttons-group > a {
     padding: 10px 25px;
@@ -27,45 +25,90 @@ nav {
     color: var(--text-secondary);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
+    z-index: 10;
 }
-/* #page-layout{
-    display: grid;
-    grid-template-columns: 4fr 2fr 2fr;
-    grid-template-rows: 100px 200px 200px;
-    gap: 20px;
-} */
+#page-layout{
+    z-index: 0;
+} 
 #header-main {
-    border: solid black 1px;
-    background-color: var(--background-primary);
+    display: fixed;
+    width: 900px;
+    margin-left: 20px;
+    margin-top: -10px;
+    padding: 10px;
     filter: drop-shadow(4px 6px 0px var(--shadow-primary));
-   
-}
-#header-main, h1{
+    background-color: var(--background-primary);
     color: var(--text-primary);
     text-shadow: 2px 2px var(--text-tertiary);
-    font-weight:600;
-    font-size: 100px;
-    padding-left: 10px;
+    font-size: 90px;
+    z-index: 6;
 }
 #content {
+    display: inline-flex;
+    margin-top: -80px;
     background-color: var(--background-secondary);
-    filter: drop-shadow(4px 6px 0px var(--shadow-primary));
+    filter: drop-shadow(-30px 30px 0px var(--background-tertiary));
     width: 1600px;
-    height: 900px;
-.container {
+    height: 700px;
+    margin-left: 5%;
+    z-index: 0;
+}
+#content, h2 {
+    font-size: 30px;
+}
+#main-section {
+    display: flex;
+    flex-direction: column;
     border: solid black 2px;
     background-color: var(--background-tertiary);
+    width: 800px;
+    height: 500px;
+    padding: 1rem;
+    margin: 20px 0px 0px 30px;
 }
+#main-section, p {
 
 }
-#side1 {
-    display: inline-flex;
-}
-#side2 {
-    grid-row: span 9;
-    grid-column: span 2;
+#main-section > img {
+    justify-content: center;
 }
 
-#foot {
-    grid-column: span 3;
+#pop {
+    margin: 20px 0px 0px 30px;
+    border: solid 2px black;
+    background-color: var(--background-tertiary);
+    text-align: center;
+}
+#aside1 {
+    border: solid 2px;
+    background-color: var(--background-tertiary);  
+    margin: 20px 0px 5px 10px;
+    padding: 1rem;
+    width: 600px;
+    height: 325px;
+    text-align: center;
+}
+#aside1 > table {
+    position: relative;
+    margin-left: 40px;
+}
+th{
+    border-bottom: solid 2px black;
+    padding: 0px 15px;
+}
+tr {
+    font-size: 17px;
+    border: solid 1px black;
+}
+#aside2 {
+    border: solid 2px;
+    background-color: var(--background-tertiary);  
+    margin: 10px;
+    padding: 1rem;
+    width: 600px;
+    height: 250px;
+}
+
+.table-item {
+    text-align: left;
 }

@@ -4,20 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To Portland</title>
-    <link rel="stylesheet" href="main.css">
+    
+    <link rel="stylesheet" href="content.css">
 </head>
-<body>
+<style>
+    html{
+        background-image: url(images/Portland.jpg);
+        background-position: center;
+    
+    }
+</style>
+<body id="page-layout">
     <header>
-        <h1>Welcome to Portland</h1>
-        <div id="buttons-group">
-            <nav>
+        <nav>
+            <div id="buttons-group">
                 <a class="nav-button" href="index.html">Home</a>
-                <a class="nav-button" href="bend.html">Bend</a>
-                <a class="nav-button" href="Portland.html">Portland</a>
+                <a class="nav-button" href="salem.html">Salem</a>
                 <a class="nav-button" href="medford.html">Medford</a>
-                <a class="nav-button" href="about.html">About</a>
-            </nav>
+            </div>
+        </nav>
+        <div >
+            <h1 id="header-main">Welcome to Portland!</h1>
         </div>
     </header>
+    <div id="content">
+        <div>
+            <section id="main-section">
+                <p>Portland is the cultural mecca of Oregon.</p>
+                <p>Founded in 1851, the north western city is located less than an hour away from the state capital.</p>
+                <p>Pricery city living lands this city at $85,876 household median income. Well above the household median income of Oregon state!</p>
+                <img src="images\portland flag.png" alt="Portland-city-flag">
+
+            </section>
+            <div id="pop"><h2>Population :635,067</h2></div>
+        </div>
+        <div>
+            <aside>
+                <div id="aside1">
+                    <h2>Local Jobs at City Median Income</h2>
+                    <table id="job-table">
+                        <tr>
+                            <th>Job</th>
+                            <th>Median Salary</th>
+                            <th>Maximum Hiring Salary</th>
+                            <th>Growth Rate</th>
+                        </tr>
+                        <tr>
+                            <td>Junior Software Enigneer</td>
+                            <td>$74,600</td>
+                            <td>$107,650</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr>
+                            <td>Biomedical Technician</td>
+                            <td>$10000</td>
+                            <td>$108000</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>job3</td>
+                            <td>$10000</td>
+                            <td>$100000</td>
+                            <td>1%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="aside2">
+                    <h2>Things to do</h2>
+                    <ol>
+                        <li>Portland Japanese Garden</li>
+                        <li>Oregon Museum of Science and Industry</li>
+                        <li>Shopping and Foodcart Clusters</li>
+                        <li>A short forty minute drive to Mount Hood</li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+    </div>
 </body>
 </html

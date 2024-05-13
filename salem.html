@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To Bend</title>
+    <title>Welcome To Salem</title>
     <link rel="stylesheet" href="content.css">
 </head>
 <style>
-
+    html{
+        background-image: url(images/SALEM.jpg);
+        background-position: center;
+        background-size: cover;
+    }
 </style>
 <body id="page-layout">
-    <header >
+    <header>
         <nav>
             <div id="buttons-group">
                 <a class="nav-button" href="index.html">Home</a>
@@ -18,55 +22,57 @@
                 <a class="nav-button" href="medford.html">Medford</a>
             </div>
         </nav>
-        <div id="header-main">
-            <h1>Welcome to Salem!</h1>
+        <div >
+            <h1 id="header-main">Welcome to Salem!</h1>
         </div>
     </header>
     <div id="content">
         <div>
-            <section class="container">
-                <p>Salem is the capital of oregon. </p>
-                <p>The city is located in north western Oregon. Just a short drive to the oregon coast.</p>
-                <h2>Population : Value</h2>
+            <div id="pop"><h2>Population : 177,487</h2></div>
+            <section id="main-section">
+                <p>Salem is the capital of Oregon. The city was established in 1857.</p>
+                <p>The city is located in north western Oregon. A short drive from the coast and the famous Portland City.</p> 
+                <p>The median household income is $67,540 compared to Oregon's median of $66,612.</p>
+                <img src="images/salem flag.png" alt="Salem-City-Flag" width="300px">
             </section>
         </div>
         <div>
             <aside>
-                <div id="side1">
-                    <h2>Local Jobs at City Median Salary</h2>
+                <div id="aside1">
+                    <h2>Local Jobs at City Median Income</h2>
                     <table id="job-table">
                         <tr>
                             <th>Job</th>
-                            <th>Minimum Salary</th>
-                            <th>Maximum Salary</th>
-                            <th>Growth Rate</th>
+                            <th>Median Salary</th>
+                            <th>Maximum Hiring Salary</th>
+                            <th>Estimated Growth Rate</th>
                         </tr>
                         <tr>
-                            <th>job1</th>
-                            <th>10000</th>
-                            <th>100000</th>
-                            <th>10%</th>
+                            <td>Journeyman Mechanic</td>
+                            <td>$70,502</td>
+                            <td>$84,054</td>
+                            <td>4%</td>
                         </tr>
                         <tr>
-                            <th>job2</th>
-                            <th>10000</th>
-                            <th>100000</th>
-                            <th>10%</th>
+                            <td>Radiologic Technologist</td>
+                            <td>$67,690</td>
+                            <td>$102,380</td>
+                            <td>6%</td>
                         </tr>
                         <tr>
-                            <th>jpb3</th>
-                            <th>10000</th>
-                            <th>100000</th>
-                            <th>10%</th>
+                            <td>Human Resources Generalist</td>
+                            <td>$66,550</td>
+                            <td>$103,604</td>
+                            <td>6%</td>
                         </tr>
                     </table>
                 </div>
-                <div id="side2">
+                <div id="aside2">
                     <h2>Things to do</h2>
                     <ol>
-                        <li>Thing 1</li>
-                        <li>Thing 2</li>
-                        <li>Thing 3</li>
+                        <li>Museums and tons of historic tours</li>
+                        <li>Nature trails everywhere</li>
+                        <li>Forty minute drive to the Oregon Coast</li>
                     </ol>
                 </div>
             </aside>
