@@ -20,7 +20,7 @@ nav {
 }
 
 #buttons-group > a {
-    flex 10;
+    flex: 10;
     border: solid 2px var(--background-tertiary);
     border-radius: 25px;
     background-color: var(--background-secondary);
